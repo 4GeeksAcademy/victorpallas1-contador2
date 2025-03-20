@@ -16,8 +16,9 @@ const Counter = () => {
     return(
         <div className="text-center">
             <h1 className="text-center">Contador: </h1>
+            <p></p>
             <div>
-                <SecondsCounter seconds = {seconds}/>
+                <h2><SecondsCounter seconds = {seconds}/></h2>
             </div>
         </div>
     )

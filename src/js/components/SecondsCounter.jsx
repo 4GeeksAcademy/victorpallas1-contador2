@@ -1,22 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function secondsCounter(props){
+function SecondsCounter(props){
     const digits = props.seconds.toString().padStart(6, "0").split(" ");
     return(
         <div className="">
-            <div className="icon">
-
+            <div className="">
             </div>
             {digits.map((digit, index) =>(
-                <div key = {index} className="">
+                <div key = {index} className="text-center">
+                    {digit}
                 </div>
 
             ))}
         </div>
     )
 }
-secondsCounter.propTypes = {
+SecondsCounter.propTypes = {
     seconds : PropTypes.number.isRequired
 };
 export default SecondsCounter;
